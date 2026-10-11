@@ -18,6 +18,7 @@ export const revouWeeks: RevoUWeek[] = [
     category: 'Digital Marketing Fundamentals',
     tools: ['Kiro', 'HTML/CSS', 'Google Sheets'],
     thumbnail: undefined,
+    liveUrl: 'https://washclub.biz.id',
     isPlaceholder: false,
   },
   {
@@ -28,6 +29,7 @@ export const revouWeeks: RevoUWeek[] = [
     category: 'Digital Marketing Fundamentals',
     tools: ['Kiro', 'HTML/CSS', 'Netlify'],
     thumbnail: undefined,
+    liveUrl: 'https://agent-6a6117c73f50b70--unrivaled-marigold-4a41be.netlify.app/',
     isPlaceholder: false,
   },
   {
