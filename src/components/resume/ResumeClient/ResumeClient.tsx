@@ -134,25 +134,13 @@ export default function ResumeClient({ siteConfig }: ResumeClientProps) {
               title="RevoU Digital Marketing Program"
               subtitle="RevoU"
               period="2026"
-              description="14-week intensive program covering digital marketing fundamentals, SEO, SEM, social media, analytics, and campaign strategy. Completed 14 real-world projects."
+              description="12-week intensive program covering digital marketing fundamentals, SEO, SEM, social media, analytics, and campaign strategy. Completed 12 real-world projects."
             />
             <ResumeItem
-              title="Formal Education"
-              subtitle="Add your degree, institution, and field of study here"
-              period="Add year"
-              description="Fill in your education details from your CV."
-              isPlaceholder
-            />
-          </Section>
-
-          {/* Experience */}
-          <Section title="Experience">
-            <ResumeItem
-              title="Add your work experience here"
-              subtitle="Company / Organisation"
-              period="Add period"
-              description="Fill in your work experience from your CV. Update src/components/resume/ResumeClient/ResumeClient.tsx with real data."
-              isPlaceholder
+              title="S1 Pendidikan Guru Sekolah Dasar (PGSD)"
+              subtitle="Universitas Sarjanawiyata Tamansiswa, Yogyakarta"
+              period="2018 – 2024"
+              description="Sarjana Pendidikan dengan fokus pada pengembangan kurikulum, pedagogi, dan komunikasi efektif."
             />
           </Section>
 
