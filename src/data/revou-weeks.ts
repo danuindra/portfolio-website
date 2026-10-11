@@ -126,6 +126,7 @@ export const revouWeeks: RevoUWeek[] = [
     category: 'Campaign Strategy',
     tools: ['Google Ads', 'Google Analytics 4', 'Gemini AI', 'Google Slides'],
     thumbnail: undefined,
+    liveUrl: 'https://drive.google.com/file/d/1SXvdrmjQGEMXBmrbpFOnOUsZPQ2Zyzea/view?usp=sharing',
     isPlaceholder: false,
   },
   {
