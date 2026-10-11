@@ -20,13 +20,13 @@ export default function ProjectsClient() {
         </p>
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--color-text-primary)] mb-4">
           {isID
-            ? '14 Studi Kasus & Eksperimen Digital Marketing'
-            : '14 Digital Marketing Case Studies & Experiments'}
+            ? '12 Studi Kasus & Eksperimen Digital Marketing'
+            : '12 Digital Marketing Case Studies & Experiments'}
         </h1>
         <p className="text-[var(--color-text-secondary)] max-w-2xl leading-relaxed mb-3">
           {isID
-            ? 'Satu project nyata setiap minggu — mulai dari riset pasar, SEO, SEM, konten, email marketing, hingga analitik dan strategi kampanye. Setiap studi kasus ditulis dengan pendekatan STAR: Situasi, Target, Aksi, dan Hasil.'
-            : 'One real project every week — covering market research, SEO, SEM, content, email marketing, analytics, and campaign strategy. Each case study follows a STAR narrative: Situation, Target, Action, Result.'}
+            ? 'Ini proyek-proyek nyata yang saya kerjain selama program RevoU — mulai dari bikin landing page, riset keyword, ngatur Meta Ads & Google Ads, sampai ngejalanin kampanye live dengan budget beneran. Bukan simulasi, semua ada hasilnya.'
+            : 'These are real projects I built during the RevoU program — from landing pages and keyword research to running live Meta Ads and Google Ads campaigns with real budgets. All of them shipped, all of them have results.'}
         </p>
         <p className="text-xs text-[var(--color-text-tertiary)]">
           {documented} / {revouWeeks.length}{' '}
