@@ -141,9 +141,9 @@ const en = {
     metaDescription: '14 weeks of real-world digital marketing projects at RevoU.',
     badge: 'RevoU Program',
     heading: 'My RevoU Journey',
-    subheading: '14 weeks. 14 projects. A structured path through the full digital marketing stack, from fundamentals to strategy, analytics, and execution.',
-    description: 'Each card is a real project completed during the program. Click any week to see the full case study.',
-    allWeeks: 'All 14 Weeks',
+    subheading: '12 real projects — Google Ads, Meta Ads, SEO, content, social media, and live campaigns. All built and executed, not simulated.',
+    description: 'Click any project to see the full case study: context, strategy, execution, and results.',
+    allWeeks: 'All 12 Projects',
     inProgress: 'Content in progress.',
     inProgressNote: 'Project details for each week will be added as the program progresses. Cards marked "Coming soon" will be updated with full case studies.',
     phases: {

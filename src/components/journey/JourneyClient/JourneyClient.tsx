@@ -24,11 +24,10 @@ export default function JourneyClient({ weeks }: JourneyClientProps) {
             My RevoU Journey
           </h1>
           <p className="text-[var(--color-text-secondary)] max-w-xl leading-relaxed mb-3">
-            14 weeks. 14 projects. A structured path through the full digital marketing stack —
-            from fundamentals to strategy, analytics, and execution.
+            12 proyek nyata — Google Ads, Meta Ads, SEO, konten, social media, sampai kampanye live. Semua dikerjakan beneran, bukan simulasi.
           </p>
           <p className="text-sm text-[var(--color-text-tertiary)]">
-            Each card is a real project completed during the program. Click any week to see the full case study.
+            Klik salah satu proyek untuk lihat studi kasus lengkap: konteks, strategi, eksekusi, dan hasilnya.
           </p>
         </AnimatedSection>
 
@@ -36,10 +35,10 @@ export default function JourneyClient({ weeks }: JourneyClientProps) {
         <AnimatedSection delay={80} className="mt-12 mb-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { label: 'Learning', description: 'Weeks 1–4', icon: '📖' },
-              { label: 'Building', description: 'Weeks 5–8', icon: '🔨' },
-              { label: 'Applying', description: 'Weeks 9–12', icon: '🚀' },
-              { label: 'Results', description: 'Weeks 13–14', icon: '📊' },
+              { label: 'Learning', description: 'Projects 1–4', icon: '📖' },
+              { label: 'Building', description: 'Projects 5–8', icon: '🔨' },
+              { label: 'Applying', description: 'Projects 9–12', icon: '🚀' },
+              { label: 'Results', description: 'Live Campaigns', icon: '📊' },
             ].map((phase, i) => (
               <AnimatedSection key={phase.label} delay={i * 60}>
                 <div className="p-4 rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-bg-surface)] text-center">
@@ -58,7 +57,7 @@ export default function JourneyClient({ weeks }: JourneyClientProps) {
         {/* Week grid */}
         <AnimatedSection delay={120}>
           <h2 className="text-xl font-semibold text-[var(--color-text-primary)] mb-8">
-            All 14 Weeks
+            Semua 12 Proyek
           </h2>
         </AnimatedSection>
 

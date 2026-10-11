@@ -141,9 +141,9 @@ const id: Translations = {
     metaDescription: '14 minggu proyek digital marketing nyata di RevoU.',
     badge: 'Program RevoU',
     heading: 'Perjalanan RevoU Saya',
-    subheading: '14 minggu. 14 proyek. Jalur terstruktur melalui stack digital marketing lengkap, dari fundamental hingga strategi, analitik, dan eksekusi.',
-    description: 'Setiap kartu adalah proyek nyata yang diselesaikan selama program. Klik minggu mana saja untuk melihat studi kasus lengkap.',
-    allWeeks: 'Semua 14 Minggu',
+    subheading: '12 proyek nyata — dari riset pasar, Google Ads, Meta Ads, SEO, konten, sampai kampanye live. Semuanya dikerjakan beneran, bukan simulasi.',
+    description: 'Klik salah satu proyek untuk lihat studi kasus lengkap: konteks, strategi, eksekusi, dan hasilnya.',
+    allWeeks: 'Semua 12 Proyek',
     inProgress: 'Konten sedang dikerjakan.',
     inProgressNote: 'Detail proyek untuk setiap minggu akan ditambahkan seiring berjalannya program. Kartu yang bertanda "Segera hadir" akan diperbarui dengan studi kasus lengkap.',
     phases: {

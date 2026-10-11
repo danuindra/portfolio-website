@@ -45,18 +45,17 @@ export default function JourneyHighlight() {
                 id="journey-highlight-heading"
                 className="text-3xl md:text-4xl font-bold tracking-tight text-[var(--color-text-primary)] mb-3"
               >
-                14 Weeks of Real Projects
+                12 Proyek Nyata
               </h2>
               <p className="text-[var(--color-text-secondary)] max-w-lg leading-relaxed">
-                A structured program covering the full digital marketing stack — learning, building,
-                applying, and measuring real results.
+                Google Ads, Meta Ads, SEO, konten, social media, sampai kampanye live — semua dikerjakan beneran selama program RevoU.
               </p>
             </div>
             <Link
               href="/journey"
               className="shrink-0 text-sm font-medium text-[var(--color-accent)] hover:underline whitespace-nowrap"
             >
-              View all 14 weeks →
+              Lihat semua proyek →
             </Link>
           </div>
         </AnimatedSection>
