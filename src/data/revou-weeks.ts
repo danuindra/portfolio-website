@@ -121,12 +121,12 @@ export const revouWeeks: RevoUWeek[] = [
   {
     week: 11,
     slug: 'week-11',
-    title: '',
-    shortDescription: '',
-    category: 'Placeholder',
-    tools: [],
+    title: 'WashClub – Google Search Ads Local Demand Testing',
+    shortDescription: 'Menjalankan local demand test 5 hari (14–18 Sep) via Google Search Ads untuk WashClub di Jakarta Selatan. Sebagai PM & Designer, mengelola alur kerja tim, merancang struktur kampanye intent-based (4 ad groups), optimasi harian dari automated ke Manual CPC, dan audit GA4 conversion tracking. Hasil: 123 click, CTR 5,66%, 6 GA4-verified leads, CPL Rp83.157, dengan winning keyword "laundry antar jemput" (CTR 10,18%).',
+    category: 'Campaign Strategy',
+    tools: ['Google Ads', 'Google Analytics 4', 'Gemini AI', 'Google Slides'],
     thumbnail: undefined,
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
     week: 12,
