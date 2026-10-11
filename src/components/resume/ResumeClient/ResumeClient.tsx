@@ -101,7 +101,7 @@ export default function ResumeClient({ siteConfig }: ResumeClientProps) {
               href={`https://${siteConfig.linkedin}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors flex items-center gap-1.5"
+              className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors flex items-center gap-1.5 break-all"
             >
               <span aria-hidden="true">→</span> {siteConfig.linkedin}
             </a>
@@ -109,14 +109,14 @@ export default function ResumeClient({ siteConfig }: ResumeClientProps) {
               href={`https://${siteConfig.github}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors flex items-center gap-1.5"
+              className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors flex items-center gap-1.5 break-all"
             >
               <span aria-hidden="true">→</span> {siteConfig.github}
             </a>
             {siteConfig.email && (
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors flex items-center gap-1.5"
+                className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors flex items-center gap-1.5 break-all"
               >
                 <span aria-hidden="true">→</span> {siteConfig.email}
               </a>

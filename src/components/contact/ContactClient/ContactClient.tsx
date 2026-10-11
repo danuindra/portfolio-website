@@ -66,7 +66,7 @@ export default function ContactClient({ siteConfig }: ContactClientProps) {
                     <dd>
                       <a
                         href={`mailto:${siteConfig.email}`}
-                        className="text-sm text-[var(--color-text-primary)] hover:text-[var(--color-accent)] transition-colors"
+                      className="text-sm text-[var(--color-text-primary)] hover:text-[var(--color-accent)] transition-colors break-all"
                       >
                         {siteConfig.email}
                       </a>
@@ -82,7 +82,7 @@ export default function ContactClient({ siteConfig }: ContactClientProps) {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={t.contact.ariaLinkedIn}
-                      className="text-sm text-[var(--color-text-primary)] hover:text-[var(--color-accent)] transition-colors"
+                      className="text-sm text-[var(--color-text-primary)] hover:text-[var(--color-accent)] transition-colors break-all"
                     >
                       {siteConfig.linkedin}
                     </a>

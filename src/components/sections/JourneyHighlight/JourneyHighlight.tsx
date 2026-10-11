@@ -62,7 +62,7 @@ export default function JourneyHighlight() {
 
         {/* Phase banner */}
         <AnimatedSection delay={60} className="mb-10">
-          <div className="grid grid-cols-4 gap-2 text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center">
             {[
               { phase: 'Learning', weeks: '1–4', active: true },
               { phase: 'Building', weeks: '5–8', active: false },

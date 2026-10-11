@@ -49,7 +49,7 @@ export default function AboutClient({ skillCategories, siteConfig }: AboutClient
           <p className="text-sm text-[var(--color-text-secondary)] mb-8 max-w-xl">
             {t.about.howIWorkSubheading}
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
             {t.about.values.map((value, i) => (
               <AnimatedSection key={value.title} delay={140 + i * 60}>
                 <div className="p-6 rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-bg-surface)] h-full">
@@ -73,7 +73,7 @@ export default function AboutClient({ skillCategories, siteConfig }: AboutClient
           <h2 className="text-2xl font-semibold text-[var(--color-text-primary)] mb-8">
             {t.about.skillsHeading}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {skillCategories.map((category) => (
               <div key={category.name}>
                 <h3 className="text-xs font-semibold text-[var(--color-text-tertiary)] uppercase tracking-wider mb-3">

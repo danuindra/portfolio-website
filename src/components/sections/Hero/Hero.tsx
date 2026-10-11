@@ -45,7 +45,7 @@ export default function Hero() {
 
           {/* Name */}
           <h1
-            className="text-5xl md:text-6xl font-bold tracking-tight text-[var(--color-text-primary)] leading-tight mb-4 animate-fade-up"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[var(--color-text-primary)] leading-tight mb-4 animate-fade-up"
             style={{ animationDelay: '80ms' }}
           >
             {siteConfig.name}
