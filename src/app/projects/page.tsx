@@ -1,22 +1,19 @@
 import { Suspense } from 'react'
 import type { Metadata } from 'next'
-import { getAllProjects } from '@/lib/mdx'
 import ProjectsClient from '@/components/project/ProjectsClient/ProjectsClient'
 
 export const metadata: Metadata = {
   title: 'Projects',
   description:
-    'Case studies and real-world projects in digital marketing, analytics, and web development.',
+    '14 real-world digital marketing projects from the RevoU program — analytics, strategy, content, and more.',
 }
 
-export default async function ProjectsPage() {
-  const mdxProjects = await getAllProjects()
-
+export default function ProjectsPage() {
   return (
     <main id="main-content" className="pt-16">
       <div className="w-full mx-auto max-w-[1200px] px-4 md:px-8 lg:px-10 py-16">
         <Suspense fallback={<div className="min-h-[60vh]" />}>
-          <ProjectsClient mdxProjects={mdxProjects} />
+          <ProjectsClient />
         </Suspense>
       </div>
     </main>
