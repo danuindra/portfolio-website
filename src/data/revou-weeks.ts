@@ -131,16 +131,6 @@ export const revouWeeks: RevoUWeek[] = [
   {
     week: 12,
     slug: 'week-12',
-    title: '',
-    shortDescription: '',
-    category: 'Placeholder',
-    tools: [],
-    thumbnail: undefined,
-    isPlaceholder: true,
-  },
-  {
-    week: 13,
-    slug: 'week-13',
     title: 'WashClub SEO Content Strategy & Article Execution',
     shortDescription: 'Merancang strategi konten SEO end-to-end untuk WashClub (washclub.biz.id) — mulai dari keyword research (primary + 5 related queries), content brief lengkap, hingga eksekusi artikel blog di WordPress. Artikel menargetkan keyword "laundry bulanan jakarta selatan" dengan struktur H1–H3 teroptimasi, CTA konversi ke formulir pendaftaran langganan, dan validasi tren via Google Trends (>5.000% growth).',
     category: 'SEO',
@@ -148,6 +138,16 @@ export const revouWeeks: RevoUWeek[] = [
     thumbnail: undefined,
     liveUrl: 'https://docs.google.com/presentation/d/13FvH5-O9Biq3XqeQqxsYsNwLrchurKbp/edit',
     isPlaceholder: false,
+  },
+  {
+    week: 13,
+    slug: 'week-13',
+    title: '',
+    shortDescription: '',
+    category: 'Placeholder',
+    tools: [],
+    thumbnail: undefined,
+    isPlaceholder: true,
   },
   {
     week: 14,
