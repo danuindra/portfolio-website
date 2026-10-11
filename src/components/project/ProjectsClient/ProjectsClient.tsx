@@ -18,15 +18,14 @@ export default function ProjectsClient() {
           {t.projects.heading}
         </h1>
         <p className="text-[var(--color-text-secondary)] max-w-xl leading-relaxed mb-3">
-          14 proyek nyata dari program RevoU Digital Marketing — satu project setiap minggu,
-          dari fundamental hingga strategi, analitik, dan eksekusi.
+          {t.projects.subheading}
         </p>
         <p className="text-xs text-[var(--color-text-tertiary)]">
-          {documented} / {revouWeeks.length} project sudah didokumentasikan
+          {documented} / {revouWeeks.length} {t.locale.current === 'ID' ? 'project didokumentasikan' : 'projects documented'}
         </p>
       </AnimatedSection>
 
-      {/* 14-week grid — flat, no sub-sections */}
+      {/* 14-week grid — flat, 3 cols desktop / 2 tablet / 1 mobile */}
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {revouWeeks.map((week, i) => (
           <AnimatedSection key={week.slug} delay={60 + i * 40}>
@@ -39,9 +38,12 @@ export default function ProjectsClient() {
       <AnimatedSection delay={200} className="mt-12">
         <div className="p-5 rounded-xl border border-dashed border-[var(--color-border-default)] bg-[var(--color-bg-surface)]">
           <p className="text-sm text-[var(--color-text-secondary)]">
-            <span className="font-semibold text-[var(--color-text-primary)]">Konten sedang dikerjakan.</span>{' '}
-            Detail project akan ditambahkan setiap minggu seiring program berjalan.
-            Card yang bertanda "Coming soon" akan diperbarui dengan studi kasus lengkap.
+            <span className="font-semibold text-[var(--color-text-primary)]">
+              {t.locale.current === 'ID' ? 'Konten sedang dikerjakan.' : 'Content in progress.'}
+            </span>{' '}
+            {t.locale.current === 'ID'
+              ? 'Detail project akan ditambahkan setiap minggu. Card "Coming soon" akan diperbarui dengan studi kasus lengkap.'
+              : 'Project details will be added week by week. Cards marked "Coming soon" will be updated with full case studies, tools, and outcomes.'}
           </p>
         </div>
       </AnimatedSection>
