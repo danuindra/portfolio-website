@@ -76,21 +76,21 @@ export default function ResumeClient({ siteConfig }: ResumeClientProps) {
               <p className="text-sm text-[var(--color-text-tertiary)] mt-1">{siteConfig.location}</p>
             </div>
 
-            {/* Download button */}
+            {/* Download button — disabled until CV file is uploaded to /public/resume/cv.pdf */}
             <div className="flex flex-col gap-3 sm:items-end shrink-0">
-              {/* Replace /resume/cv.pdf with your actual CV file once uploaded to /public/resume/ */}
-              <a
-                href="/resume/cv.pdf"
-                download
-                className="inline-flex items-center justify-center gap-2 h-11 px-6 rounded-lg bg-[var(--color-accent)] text-white text-sm font-medium transition-all hover:-translate-y-px hover:shadow-md active:translate-y-0"
-                aria-label="Download CV as PDF"
+              <span
+                className="inline-flex items-center justify-center gap-2 h-11 px-6 rounded-lg border border-[var(--color-border-default)] text-[var(--color-text-tertiary)] text-sm font-medium cursor-not-allowed select-none"
+                aria-label="CV not yet available for download"
+                title="CV file coming soon"
               >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path d="M8 1v9M4.5 7l3.5 3.5L11.5 7M2 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
                 Download CV
-              </a>
-              <p className="text-xs text-[var(--color-text-tertiary)]">PDF, last updated 2026</p>
+              </span>
+              <p className="text-xs text-[var(--color-text-tertiary)]">
+                PDF coming soon — upload to <code className="font-mono">/public/resume/cv.pdf</code>
+              </p>
             </div>
           </div>
         </AnimatedSection>
@@ -220,19 +220,17 @@ export default function ResumeClient({ siteConfig }: ResumeClientProps) {
         <AnimatedSection delay={200}>
           <div className="mt-4 pt-12 border-t border-[var(--color-border-subtle)] flex flex-wrap items-center justify-between gap-6">
             <p className="text-sm text-[var(--color-text-secondary)]">
-              Want the full version? Download the PDF.
+              PDF version coming soon. Upload your CV to <code className="font-mono text-xs">/public/resume/cv.pdf</code> to enable the download button.
             </p>
-            <a
-              href="/resume/cv.pdf"
-              download
-              className="inline-flex items-center justify-center gap-2 h-10 px-5 rounded-lg border border-[var(--color-border-default)] text-[var(--color-text-primary)] text-sm font-medium transition-all hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
-              aria-label="Download CV as PDF"
+            <span
+              className="inline-flex items-center justify-center gap-2 h-10 px-5 rounded-lg border border-[var(--color-border-subtle)] text-[var(--color-text-tertiary)] text-sm font-medium cursor-not-allowed select-none"
+              aria-label="CV not yet available"
             >
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M8 1v9M4.5 7l3.5 3.5L11.5 7M2 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Download CV
-            </a>
+            </span>
           </div>
         </AnimatedSection>
 

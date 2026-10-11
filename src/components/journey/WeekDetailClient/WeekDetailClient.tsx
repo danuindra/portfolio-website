@@ -47,10 +47,10 @@ export default function WeekDetailClient({ week, prev, next }: WeekDetailClientP
         {/* Back to journey */}
         <AnimatedSection>
           <Link
-            href="/journey"
+            href="/projects"
             className="inline-flex items-center gap-1.5 text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors mb-8"
           >
-            ← My RevoU Journey
+            ← All Projects
           </Link>
         </AnimatedSection>
 
@@ -209,7 +209,7 @@ export default function WeekDetailClient({ week, prev, next }: WeekDetailClientP
             <div>
               {prev ? (
                 <Link
-                  href={`/journey/${prev.slug}`}
+                  href={`/projects/week-${String(prev.week).padStart(2, '0')}`}
                   className="group flex flex-col gap-1 p-4 rounded-xl border border-[var(--color-border-subtle)] hover:border-[var(--color-accent)] transition-colors"
                 >
                   <span className="text-xs text-[var(--color-text-tertiary)] group-hover:text-[var(--color-accent)] transition-colors">
@@ -228,7 +228,7 @@ export default function WeekDetailClient({ week, prev, next }: WeekDetailClientP
             <div className="flex justify-end">
               {next ? (
                 <Link
-                  href={`/journey/${next.slug}`}
+                  href={`/projects/week-${String(next.week).padStart(2, '0')}`}
                   className="group flex flex-col gap-1 p-4 rounded-xl border border-[var(--color-border-subtle)] hover:border-[var(--color-accent)] transition-colors text-right w-full"
                 >
                   <span className="text-xs text-[var(--color-text-tertiary)] group-hover:text-[var(--color-accent)] transition-colors">
@@ -245,13 +245,13 @@ export default function WeekDetailClient({ week, prev, next }: WeekDetailClientP
           </nav>
         </AnimatedSection>
 
-        {/* Back to journey CTA */}
+        {/* Back to projects CTA */}
         <AnimatedSection delay={200} className="mt-8 text-center">
           <Link
-            href="/journey"
+            href="/projects"
             className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors"
           >
-            ← Back to all 14 weeks
+            ← Back to all projects
           </Link>
         </AnimatedSection>
 

@@ -29,7 +29,7 @@ export default function WeekCard({ week }: WeekCardProps) {
 
   return (
     <Link
-      href={`/journey/${week.slug}`}
+      href={`/projects/week-${weekNum}`}
       className="group flex flex-col h-full p-5 rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-bg-surface)] hover:border-[var(--color-border-default)] hover:shadow-md transition-all duration-[250ms] hover:-translate-y-1"
       aria-label={`View Week ${weekNum}: ${week.title}`}
     >

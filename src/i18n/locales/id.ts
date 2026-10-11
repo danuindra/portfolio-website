@@ -6,7 +6,6 @@ const id: Translations = {
   nav: {
     home: 'Beranda',
     about: 'Tentang',
-    journey: 'Perjalanan',
     projects: 'Proyek',
     skills: 'Keahlian',
     resume: 'Resume',
@@ -24,7 +23,6 @@ const id: Translations = {
     email: 'Email',
     navHome: 'Beranda',
     navAbout: 'Tentang',
-    navJourney: 'Perjalanan',
     navProjects: 'Proyek',
     navSkills: 'Keahlian',
     navResume: 'Resume',

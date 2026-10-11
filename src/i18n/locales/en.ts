@@ -6,7 +6,6 @@ const en = {
   nav: {
     home: 'Home',
     about: 'About',
-    journey: 'Journey',
     projects: 'Projects',
     skills: 'Skills',
     resume: 'Resume',
@@ -24,7 +23,6 @@ const en = {
     email: 'Email',
     navHome: 'Home',
     navAbout: 'About',
-    navJourney: 'Journey',
     navProjects: 'Projects',
     navSkills: 'Skills',
     navResume: 'Resume',
@@ -315,7 +313,6 @@ export type Translations = {
   nav: {
     home: string
     about: string
-    journey: string
     projects: string
     skills: string
     resume: string
@@ -331,7 +328,6 @@ export type Translations = {
     email: string
     navHome: string
     navAbout: string
-    navJourney: string
     navProjects: string
     navSkills: string
     navResume: string

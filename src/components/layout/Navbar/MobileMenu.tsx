@@ -12,7 +12,6 @@ import { useLocale } from '@/context/LocaleContext'
 const navLinks = [
   { href: '/', labelKey: 'home' as const },
   { href: '/about', labelKey: 'about' as const },
-  { href: '/journey', labelKey: 'journey' as const },
   { href: '/projects', labelKey: 'projects' as const },
   { href: '/skills', labelKey: 'skills' as const },
   { href: '/resume', labelKey: 'resume' as const },
