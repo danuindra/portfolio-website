@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import AnimatedSection from '@/components/shared/AnimatedSection/AnimatedSection'
-import Journey from '@/components/sections/Journey/Journey'
 import { useLocale } from '@/context/LocaleContext'
 import type { skillCategories as SkillCategoriesType } from '@/data/skills'
 import type { siteConfig as SiteConfigType } from '@/data/site'
@@ -26,7 +25,7 @@ export default function AboutClient({ skillCategories, siteConfig }: AboutClient
           </h1>
         </AnimatedSection>
 
-        {/* Bio section */}
+        {/* Bio */}
         <AnimatedSection delay={80} className="mb-20 max-w-2xl">
           <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed mb-5">
             {siteConfig.name}, {t.about.bio1} {siteConfig.location}.
@@ -42,29 +41,8 @@ export default function AboutClient({ skillCategories, siteConfig }: AboutClient
           </p>
         </AnimatedSection>
 
-        {/* How I Work */}
-        <AnimatedSection delay={160} className="mb-20">
-          <h2 className="text-2xl font-semibold text-[var(--color-text-primary)] mb-8">
-            {t.about.howIWorkHeading}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {t.about.values.map((value, i) => (
-              <AnimatedSection key={value.title} delay={i * 60}>
-                <div className="p-6 rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-bg-surface)] h-full">
-                  <h3 className="text-sm font-semibold text-[var(--color-text-primary)] mb-3">
-                    {value.title}
-                  </h3>
-                  <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
-                    {value.description}
-                  </p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </AnimatedSection>
-
         {/* Skills */}
-        <AnimatedSection delay={240} className="mb-20">
+        <AnimatedSection delay={160} className="mb-20">
           <h2 className="text-2xl font-semibold text-[var(--color-text-primary)] mb-8">
             {t.about.skillsHeading}
           </h2>
@@ -89,13 +67,8 @@ export default function AboutClient({ skillCategories, siteConfig }: AboutClient
           </div>
         </AnimatedSection>
 
-        {/* Journey timeline */}
-        <AnimatedSection delay={320} className="mb-20">
-          <Journey />
-        </AnimatedSection>
-
         {/* Bottom CTA */}
-        <AnimatedSection delay={400}>
+        <AnimatedSection delay={240}>
           <div className="border-t border-[var(--color-border-subtle)] pt-12">
             <p className="text-[var(--color-text-secondary)] mb-6">
               {t.about.ctaText}

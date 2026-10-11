@@ -191,18 +191,6 @@ const en = {
         description:
           'Built this website as a real product — from strategy and UX to development and deployment.',
       },
-      {
-        title: 'Google Analytics 4 Dashboard',
-        organization: undefined,
-        description:
-          'Built a working GA4 + Looker Studio reporting system for tracking and analyzing marketing performance.',
-      },
-      {
-        title: 'AI Product Visualization',
-        organization: undefined,
-        description:
-          'Explored AI-assisted workflows for content creation and product visualization.',
-      },
     ],
   },
 

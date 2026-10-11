@@ -191,18 +191,6 @@ const id: Translations = {
         description:
           'Membangun website ini sebagai produk nyata — mulai dari strategi dan UX hingga pengembangan dan deployment.',
       },
-      {
-        title: 'Dashboard Google Analytics 4',
-        organization: undefined,
-        description:
-          'Membangun sistem pelaporan GA4 + Looker Studio yang berfungsi untuk melacak dan menganalisis performa marketing.',
-      },
-      {
-        title: 'Visualisasi Produk dengan AI',
-        organization: undefined,
-        description:
-          'Menjelajahi alur kerja berbantuan AI untuk pembuatan konten dan visualisasi produk.',
-      },
     ],
   },
 
