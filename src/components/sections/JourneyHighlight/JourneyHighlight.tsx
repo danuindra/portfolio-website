@@ -92,12 +92,12 @@ export default function JourneyHighlight() {
             return (
               <AnimatedSection key={week.slug} delay={80 + i * 60}>
                 <Link
-                  href={`/journey/${week.slug}`}
+                  href={`/projects/${week.slug}`}
                   className="group flex flex-col h-full p-5 rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-bg-surface)] hover:border-[var(--color-border-default)] hover:shadow-md transition-all duration-[250ms] hover:-translate-y-1"
-                  aria-label={`Week ${weekNum}: ${week.title}`}
+                  aria-label={`Project ${weekNum}: ${week.title}`}
                 >
                   <span className="text-xs font-mono font-semibold text-[var(--color-text-tertiary)] tracking-widest mb-3">
-                    WEEK {weekNum}
+                    PROJECT {weekNum}
                   </span>
                   <span className="inline-block self-start text-xs font-medium text-[var(--color-accent)] bg-[var(--color-accent-subtle)] px-2 py-0.5 rounded mb-3">
                     {categoryShort[week.category] ?? week.category}

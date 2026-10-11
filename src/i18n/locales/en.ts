@@ -44,9 +44,11 @@ const en = {
   // ── Hero section ─────────────────────────────────────────────────────────────
   hero: {
     greeting: "Hi, I'm",
+    headline: 'Digital Marketer & Analyst focused on data-driven growth, campaign execution, and measurable business impact.',
+    subheadline: 'I bridge marketing strategy and data analytics: turning raw data into growth opportunities, without the guesswork.',
     description:
-      "I approach marketing work analytically — building systems to measure what's working, document what isn't, and improve over time. Currently developing real-world projects in analytics, data visualization, and digital marketing strategy.",
-    ctaWork: 'View My Work',
+      "I approach marketing work analytically: building systems to measure what's working, document what isn't, and improve over time. Currently developing real-world projects in analytics, data visualization, and digital marketing strategy.",
+    ctaWork: 'View Case Studies',
     ctaContact: 'Get in Touch',
     availability: 'Open to full-time opportunities',
   },
@@ -56,7 +58,7 @@ const en = {
     eyebrow: 'About',
     heading: 'I treat every project like a product.',
     body1:
-      "I'm a digital marketer who works at the intersection of strategy, data, and execution. My background is in building things that actually work — from analytics dashboards to landing pages — and documenting the process so others can learn from it.",
+      "I'm a digital marketer who works at the intersection of strategy, data, and execution. My background is in building things that actually work, from analytics dashboards to landing pages, and documenting the process so others can learn from it.",
     body2: 'This portfolio is a living document of that work.',
     readMore: 'Read my full story →',
   },
@@ -64,33 +66,34 @@ const en = {
   // ── About page ───────────────────────────────────────────────────────────────
   about: {
     pageTitle: 'About',
-    metaDescription: "background, skills, and approach to digital marketing and data analytics",
+    metaDescription: 'Background, growth systems, and approach to digital marketing and data analytics. Danu Indra Ismawan.',
     heading: 'About Me',
-    bio1: 'a digital marketer based in',
-    bio2: 'My work sits at the intersection of marketing strategy, data analytics, and digital execution. I\'m drawn to work that is measurable — where you can look at the numbers and know whether something worked.',
-    bio3: "Right now, I'm building the foundation of that career deliberately. Through structured learning, real-world projects, and a portfolio I treat as a living product — not a static resume — I'm documenting every step of the process.",
-    bio4: "I believe the best way to demonstrate capability is to build something and show your work. That's what this website is for.",
-    howIWorkHeading: 'How I Work',
+    bio1: 'a Digital Marketer & Analyst based in',
+    bio2: 'Bagi saya, digital marketing bukan cuma soal pasang iklan, tapi tentang membangun sistem growth yang terukur dan terdokumentasi. Saya tertarik pada pekerjaan yang bisa dibuktikan dengan angka: apakah kampanye ini berhasil? Kenapa? Apa yang bisa di-scale?',
+    bio3: "Saat ini saya sedang membangun fondasi karier itu secara deliberate, melalui program RevoU, proyek nyata, dan portfolio yang saya perlakukan sebagai produk hidup, bukan resume statis.",
+    bio4: "Cara terbaik membuktikan kemampuan adalah dengan membangun sesuatu dan menunjukkan hasilnya. Itulah tujuan website ini.",
+    howIWorkHeading: 'Cara Saya Bekerja',
+    howIWorkSubheading: 'Tiga prinsip operasional yang menjadi fondasi setiap proyek dan keputusan marketing saya.',
     skillsHeading: 'Skills & Tools',
     journeyHeading: 'My Journey',
-    ctaText: 'Interested in working together?',
-    ctaContact: 'Get in Touch',
-    ctaProjects: 'View Projects',
+    ctaText: 'Tertarik untuk bekerja sama atau berdiskusi?',
+    ctaContact: 'Hubungi Saya',
+    ctaProjects: 'Lihat Proyek',
     values: [
       {
-        title: 'Analytical first',
+        title: 'Analytical First',
         description:
-          "I start with data, not assumptions. Before any campaign or project, I want to understand what's measurable and what success looks like.",
+          'Keputusan berbasis data dan hipotesis, bukan asumsi. Sebelum kampanye apapun dimulai, saya ingin tahu: apa yang diukur, dan seperti apa keberhasilannya?',
       },
       {
-        title: 'Systems over tactics',
+        title: 'Systems over Tactics',
         description:
-          "I'm more interested in building repeatable systems than one-time wins. Good marketing compounds over time.",
+          'Proses terstruktur yang bisa direplikasi dan di-scale. Marketing yang bagus bukan tentang satu kemenangan, tapi sistem yang terus compound seiring waktu.',
       },
       {
-        title: 'Document everything',
+        title: 'Document Everything',
         description:
-          "I write down what I learn, what I build, and what I'd do differently. It makes me a better collaborator and keeps the work honest.",
+          'Setiap eksperimen, kampanye, dan hasil selalu terdokumentasi. Ini membuat saya kolaborator yang lebih baik dan memastikan pekerjaan tetap transparan.',
       },
     ],
   },
@@ -112,14 +115,14 @@ const en = {
     metaDescription: 'Skills and tools used in digital marketing, analytics, and web projects.',
     eyebrow: 'Skills & Tools',
     heading: 'What I Work With',
-    subheading: 'Skills built through real projects — not just courses.',
-    note: 'Development skills (React, Next.js, TypeScript) are used in building this website but are intentionally excluded here — this portfolio focuses on digital marketing capabilities.',
+    subheading: 'Skills built through real projects, not just courses.',
+    note: 'Development skills (React, Next.js, TypeScript) are used in building this website but are intentionally excluded here; this portfolio focuses on digital marketing capabilities.',
   },
 
   // ── Resume page ──────────────────────────────────────────────────────────────
   resumePage: {
     pageTitle: 'Resume',
-    metaDescription: 'Resume and CV — Digital Marketer & Analyst.',
+    metaDescription: 'Resume and CV, Digital Marketer & Analyst.',
     heading: 'Resume',
     downloadCv: 'Download CV',
     downloadNote: 'PDF, last updated 2026',
@@ -138,7 +141,7 @@ const en = {
     metaDescription: '14 weeks of real-world digital marketing projects at RevoU.',
     badge: 'RevoU Program',
     heading: 'My RevoU Journey',
-    subheading: '14 weeks. 14 projects. A structured path through the full digital marketing stack — from fundamentals to strategy, analytics, and execution.',
+    subheading: '14 weeks. 14 projects. A structured path through the full digital marketing stack, from fundamentals to strategy, analytics, and execution.',
     description: 'Each card is a real project completed during the program. Click any week to see the full case study.',
     allWeeks: 'All 14 Weeks',
     inProgress: 'Content in progress.',
@@ -169,7 +172,7 @@ const en = {
         learned: 'What I Learned',
       },
       placeholder: 'content coming soon.',
-      galleryPlaceholder: 'Screenshots / outputs — coming soon.',
+      galleryPlaceholder: 'Screenshots / outputs: coming soon.',
     },
   },
 
@@ -189,7 +192,7 @@ const en = {
         title: 'Personal Portfolio Website',
         organization: undefined,
         description:
-          'Built this website as a real product — from strategy and UX to development and deployment.',
+          'Built this website as a real product, from strategy and UX to development and deployment.',
       },
     ],
   },
@@ -206,12 +209,12 @@ const en = {
   projects: {
     pageTitle: 'Projects',
     metaDescription:
-      'Case studies and real-world projects in digital marketing, analytics, and web development.',
-    heading: 'Projects',
+      '14 digital marketing case studies & experiments from the RevoU program: SEO, SEM, analytics, content, email, and campaign strategy.',
+    heading: '14 Digital Marketing Case Studies & Experiments',
     subheading:
-      'Real-world work in marketing, analytics, and web development. Each project includes the problem, process, and results.',
+      'One real project every week, covering SEO, SEM, content, email marketing, analytics, and campaign strategy. Each case study follows a STAR narrative: Situation, Target, Action, Result.',
     empty: 'No projects in this category yet.',
-    emptyHint: 'More work is in progress — check back soon.',
+    emptyHint: 'More work is in progress; check back soon.',
     filterLabel: 'Filter projects by category',
     categories: {
       all: 'All',
@@ -257,11 +260,11 @@ const en = {
   // ── Contact page ─────────────────────────────────────────────────────────────
   contact: {
     pageTitle: 'Contact',
-    metaDescription: 'for full-time opportunities, freelance work, or collaboration',
-    heading: "Let's Connect",
+    metaDescription: 'Get in touch with Danu Indra Ismawan for full-time opportunities, freelance work, or digital marketing collaboration.',
+    heading: "Let's Talk",
     body1:
-      "I'm open to full-time roles, freelance collaborations, and conversations with people doing interesting work in marketing and tech.",
-    body2: 'The best way to reach me is via email — I respond within 24 hours.',
+      "Let's talk about work opportunities or anything digital marketing. Open to full-time roles, freelance projects, or a quick chat about growth strategy.",
+    body2: "Fastest way? Drop a message below. I reply within 24 hours.",
     availability: 'Currently open to full-time opportunities in Digital Marketing',
     directHeading: 'Or reach me directly',
     labelEmail: 'Email',
@@ -283,7 +286,7 @@ const en = {
     submit: 'Send Message',
     sending: 'Sending…',
     successTitle: 'Message sent.',
-    successBody: "Thanks for reaching out — I'll get back to you within 24 hours.",
+    successBody: "Thanks for reaching out. I'll get back to you within 24 hours.",
   },
 
   // ── Server action validation errors ─────────────────────────────────────────
@@ -331,6 +334,8 @@ export type Translations = {
   }
   hero: {
     greeting: string
+    headline: string
+    subheadline: string
     description: string
     ctaWork: string
     ctaContact: string
@@ -352,6 +357,7 @@ export type Translations = {
     bio3: string
     bio4: string
     howIWorkHeading: string
+    howIWorkSubheading: string
     skillsHeading: string
     journeyHeading: string
     ctaText: string

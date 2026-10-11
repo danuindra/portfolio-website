@@ -32,8 +32,8 @@ export default function ProjectsHighlightClient() {
           </h2>
           <p className="text-sm text-[var(--color-text-secondary)] max-w-lg">
             {t.locale.current === 'ID'
-              ? 'Program RevoU Digital Marketing 14 minggu — proyek nyata, minggu demi minggu.'
-              : '14-week RevoU Digital Marketing program — real projects, week by week.'}
+              ? 'Program RevoU Digital Marketing 14 minggu, proyek nyata minggu demi minggu.'
+              : '14-week RevoU Digital Marketing program, real projects week by week.'}
           </p>
         </AnimatedSection>
 

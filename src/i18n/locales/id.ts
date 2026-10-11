@@ -44,9 +44,11 @@ const id: Translations = {
   // ── Hero section ─────────────────────────────────────────────────────────────
   hero: {
     greeting: 'Halo, saya',
+    headline: 'Digital Marketer & Analyst yang fokus pada pertumbuhan berbasis data, eksekusi kampanye, dan dampak bisnis yang terukur.',
+    subheadline: 'Saya menjembatani strategi marketing dan analitik data: mengubah data mentah menjadi peluang pertumbuhan tanpa tebak-tebakan.',
     description:
-      'Saya mendekati pekerjaan marketing secara analitis — membangun sistem untuk mengukur apa yang berhasil, mendokumentasikan apa yang tidak, dan terus berkembang. Saat ini sedang mengerjakan proyek nyata di bidang analitik, visualisasi data, dan strategi digital marketing.',
-    ctaWork: 'Lihat Karya Saya',
+      'Saya mendekati pekerjaan marketing secara analitis, membangun sistem untuk mengukur apa yang berhasil, mendokumentasikan apa yang tidak, dan terus berkembang. Saat ini sedang mengerjakan proyek nyata di bidang analitik, visualisasi data, dan strategi digital marketing.',
+    ctaWork: 'Lihat Studi Kasus',
     ctaContact: 'Hubungi Saya',
     availability: 'Terbuka untuk peluang kerja penuh waktu',
   },
@@ -56,7 +58,7 @@ const id: Translations = {
     eyebrow: 'Tentang',
     heading: 'Saya memperlakukan setiap proyek seperti sebuah produk.',
     body1:
-      'Saya adalah digital marketer yang bekerja di persimpangan strategi, data, dan eksekusi. Latar belakang saya adalah membangun hal-hal yang benar-benar berfungsi — dari dashboard analitik hingga landing page — dan mendokumentasikan prosesnya agar orang lain bisa belajar darinya.',
+      'Saya adalah digital marketer yang bekerja di persimpangan strategi, data, dan eksekusi. Latar belakang saya adalah membangun hal-hal yang benar-benar berfungsi, dari dashboard analitik hingga landing page, dan mendokumentasikan prosesnya agar orang lain bisa belajar darinya.',
     body2: 'Portfolio ini adalah dokumen hidup dari pekerjaan tersebut.',
     readMore: 'Baca cerita lengkap saya →',
   },
@@ -64,33 +66,34 @@ const id: Translations = {
   // ── About page ───────────────────────────────────────────────────────────────
   about: {
     pageTitle: 'Tentang',
-    metaDescription: 'latar belakang, keahlian, dan pendekatan dalam digital marketing dan analitik data',
+    metaDescription: 'Latar belakang, sistem growth, dan pendekatan digital marketing & analitik data. Danu Indra Ismawan.',
     heading: 'Tentang Saya',
-    bio1: 'seorang digital marketer yang berbasis di',
-    bio2: 'Pekerjaan saya berada di persimpangan strategi marketing, analitik data, dan eksekusi digital. Saya tertarik pada pekerjaan yang terukur — di mana Anda bisa melihat angka-angkanya dan mengetahui apakah sesuatu berhasil.',
-    bio3: 'Saat ini, saya membangun fondasi karier itu secara deliberate. Melalui pembelajaran terstruktur, proyek nyata, dan portfolio yang saya perlakukan sebagai produk hidup — bukan resume statis — saya mendokumentasikan setiap langkah prosesnya.',
-    bio4: 'Saya percaya cara terbaik untuk menunjukkan kemampuan adalah dengan membangun sesuatu dan memperlihatkan hasilnya. Itulah tujuan website ini.',
+    bio1: 'seorang Digital Marketer & Analyst yang berbasis di',
+    bio2: 'Bagi saya, digital marketing bukan cuma soal pasang iklan, tapi tentang membangun sistem growth yang terukur dan terdokumentasi. Saya tertarik pada pekerjaan yang bisa dibuktikan dengan angka: apakah kampanye ini berhasil? Kenapa? Apa yang bisa di-scale?',
+    bio3: 'Saat ini saya sedang membangun fondasi karier itu secara deliberate, melalui program RevoU, proyek nyata, dan portfolio yang saya perlakukan sebagai produk hidup, bukan resume statis.',
+    bio4: 'Cara terbaik membuktikan kemampuan adalah dengan membangun sesuatu dan menunjukkan hasilnya. Itulah tujuan website ini.',
     howIWorkHeading: 'Cara Saya Bekerja',
+    howIWorkSubheading: 'Tiga prinsip operasional yang menjadi fondasi setiap proyek dan keputusan marketing saya.',
     skillsHeading: 'Keahlian & Alat',
     journeyHeading: 'Perjalanan Saya',
-    ctaText: 'Tertarik untuk bekerja sama?',
+    ctaText: 'Tertarik untuk bekerja sama atau berdiskusi?',
     ctaContact: 'Hubungi Saya',
     ctaProjects: 'Lihat Proyek',
     values: [
       {
-        title: 'Analitis terlebih dahulu',
+        title: 'Analytical First',
         description:
-          'Saya mulai dengan data, bukan asumsi. Sebelum kampanye atau proyek apapun, saya ingin memahami apa yang dapat diukur dan seperti apa keberhasilannya.',
+          'Keputusan berbasis data dan hipotesis, bukan asumsi. Sebelum kampanye apapun dimulai, saya ingin tahu: apa yang diukur, dan seperti apa keberhasilannya?',
       },
       {
-        title: 'Sistem di atas taktik',
+        title: 'Systems over Tactics',
         description:
-          'Saya lebih tertarik membangun sistem yang dapat diulang daripada mengejar kemenangan satu kali. Marketing yang baik terus berkembang seiring waktu.',
+          'Proses terstruktur yang bisa direplikasi dan di-scale. Marketing yang bagus bukan tentang satu kemenangan, tapi sistem yang terus compound seiring waktu.',
       },
       {
-        title: 'Dokumentasikan segalanya',
+        title: 'Document Everything',
         description:
-          'Saya menulis apa yang saya pelajari, apa yang saya bangun, dan apa yang akan saya lakukan berbeda. Ini menjadikan saya kolaborator yang lebih baik dan menjaga pekerjaan tetap jujur.',
+          'Setiap eksperimen, kampanye, dan hasil selalu terdokumentasi. Ini membuat saya kolaborator yang lebih baik dan memastikan pekerjaan tetap transparan.',
       },
     ],
   },
@@ -112,14 +115,14 @@ const id: Translations = {
     metaDescription: 'Keahlian dan alat yang digunakan dalam proyek digital marketing, analitik, dan web.',
     eyebrow: 'Keahlian & Alat',
     heading: 'Yang Saya Kerjakan',
-    subheading: 'Keahlian dibangun melalui proyek nyata — bukan hanya kursus.',
-    note: 'Keahlian pengembangan (React, Next.js, TypeScript) digunakan untuk membangun website ini tetapi sengaja tidak dicantumkan di sini — portfolio ini berfokus pada kemampuan digital marketing.',
+    subheading: 'Keahlian dibangun melalui proyek nyata, bukan hanya kursus.',
+    note: 'Keahlian pengembangan (React, Next.js, TypeScript) digunakan untuk membangun website ini tetapi sengaja tidak dicantumkan di sini; portfolio ini berfokus pada kemampuan digital marketing.',
   },
 
   // ── Resume page ──────────────────────────────────────────────────────────────
   resumePage: {
     pageTitle: 'Resume',
-    metaDescription: 'Resume dan CV — Digital Marketer & Analis.',
+    metaDescription: 'Resume dan CV, Digital Marketer & Analis.',
     heading: 'Resume',
     downloadCv: 'Unduh CV',
     downloadNote: 'PDF, terakhir diperbarui 2026',
@@ -138,7 +141,7 @@ const id: Translations = {
     metaDescription: '14 minggu proyek digital marketing nyata di RevoU.',
     badge: 'Program RevoU',
     heading: 'Perjalanan RevoU Saya',
-    subheading: '14 minggu. 14 proyek. Jalur terstruktur melalui stack digital marketing lengkap — dari fundamental hingga strategi, analitik, dan eksekusi.',
+    subheading: '14 minggu. 14 proyek. Jalur terstruktur melalui stack digital marketing lengkap, dari fundamental hingga strategi, analitik, dan eksekusi.',
     description: 'Setiap kartu adalah proyek nyata yang diselesaikan selama program. Klik minggu mana saja untuk melihat studi kasus lengkap.',
     allWeeks: 'Semua 14 Minggu',
     inProgress: 'Konten sedang dikerjakan.',
@@ -169,7 +172,7 @@ const id: Translations = {
         learned: 'Yang Saya Pelajari',
       },
       placeholder: 'konten segera hadir.',
-      galleryPlaceholder: 'Screenshot / output — segera hadir.',
+      galleryPlaceholder: 'Screenshot / output: segera hadir.',
     },
   },
 
@@ -189,7 +192,7 @@ const id: Translations = {
         title: 'Website Portfolio Pribadi',
         organization: undefined,
         description:
-          'Membangun website ini sebagai produk nyata — mulai dari strategi dan UX hingga pengembangan dan deployment.',
+          'Membangun website ini sebagai produk nyata, mulai dari strategi dan UX hingga pengembangan dan deployment.',
       },
     ],
   },
@@ -211,7 +214,7 @@ const id: Translations = {
     subheading:
       'Pekerjaan nyata dalam marketing, analitik, dan pengembangan web. Setiap proyek mencakup masalah, proses, dan hasilnya.',
     empty: 'Belum ada proyek dalam kategori ini.',
-    emptyHint: 'Lebih banyak pekerjaan sedang dalam proses — pantau terus.',
+    emptyHint: 'Lebih banyak pekerjaan sedang dalam proses; pantau terus.',
     filterLabel: 'Filter proyek berdasarkan kategori',
     categories: {
       all: 'Semua',
@@ -257,11 +260,11 @@ const id: Translations = {
   // ── Contact page ─────────────────────────────────────────────────────────────
   contact: {
     pageTitle: 'Kontak',
-    metaDescription: 'untuk peluang kerja penuh waktu, pekerjaan freelance, atau kolaborasi',
-    heading: 'Mari Terhubung',
+    metaDescription: 'Hubungi Danu Indra Ismawan untuk peluang kerja, kolaborasi freelance, atau diskusi digital marketing.',
+    heading: 'Yuk, Ngobrol!',
     body1:
-      'Saya terbuka untuk peran penuh waktu, kolaborasi freelance, dan percakapan dengan orang-orang yang melakukan pekerjaan menarik di bidang marketing dan teknologi.',
-    body2: 'Cara terbaik untuk menghubungi saya adalah melalui email — saya membalas dalam 24 jam.',
+      'Yuk, ngobrolin peluang kerja sama atau diskusi seputar digital marketing! Saya terbuka untuk peran full-time, kolaborasi freelance, atau sekadar tukar pikiran soal growth strategy.',
+    body2: 'Cara paling cepat? Kirim pesan via form di bawah. Saya balas dalam 24 jam.',
     availability: 'Saat ini terbuka untuk peluang kerja penuh waktu di Digital Marketing',
     directHeading: 'Atau hubungi langsung',
     labelEmail: 'Email',
@@ -283,7 +286,7 @@ const id: Translations = {
     submit: 'Kirim Pesan',
     sending: 'Mengirim…',
     successTitle: 'Pesan terkirim.',
-    successBody: 'Terima kasih telah menghubungi — saya akan membalas dalam 24 jam.',
+    successBody: 'Terima kasih telah menghubungi; saya akan membalas dalam 24 jam.',
   },
 
   // ── Server action validation errors ─────────────────────────────────────────

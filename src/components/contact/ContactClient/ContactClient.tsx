@@ -11,6 +11,7 @@ interface ContactClientProps {
 
 export default function ContactClient({ siteConfig }: ContactClientProps) {
   const { t } = useLocale()
+  const isID = t.locale.current === 'ID'
 
   return (
     <main id="main-content" className="pt-16">
@@ -18,19 +19,26 @@ export default function ContactClient({ siteConfig }: ContactClientProps) {
 
         {/* Page header */}
         <AnimatedSection>
+          <p className="text-xs font-semibold text-[var(--color-accent)] uppercase tracking-wider mb-3">
+            {isID ? 'Kontak' : 'Contact'}
+          </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--color-text-primary)] mb-4">
-            {t.contact.heading}
+            {isID ? 'Yuk, Ngobrol!' : "Let's Talk"}
           </h1>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mb-2 max-w-xl">
-            {t.contact.body1}
+            {isID
+              ? 'Yuk, ngobrolin peluang kerja sama atau diskusi seputar digital marketing! Saya terbuka untuk peran full-time, kolaborasi freelance, atau sekadar tukar pikiran soal growth strategy.'
+              : "Let's talk about work opportunities or anything digital marketing. Open to full-time roles, freelance projects, or a quick chat about growth strategy."}
           </p>
-          <p className="text-sm text-[var(--color-text-secondary)] mb-12">
-            {t.contact.body2}
+          <p className="text-sm text-[var(--color-text-secondary)] mb-10">
+            {isID
+              ? 'Cara paling cepat? Kirim pesan via form di bawah — saya balas dalam 24 jam.'
+              : 'Fastest way? Drop a message below. I reply within 24 hours.'}
           </p>
 
-          {/* Status */}
+          {/* Availability status */}
           <div className="flex items-center gap-2 mb-12">
-            <span className="w-2 h-2 rounded-full bg-[var(--color-success)]" aria-hidden="true" />
+            <span className="w-2 h-2 rounded-full bg-[var(--color-success)] animate-pulse" aria-hidden="true" />
             <span className="text-sm text-[var(--color-text-secondary)]">
               {t.contact.availability}
             </span>

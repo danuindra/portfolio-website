@@ -41,8 +41,35 @@ export default function AboutClient({ skillCategories, siteConfig }: AboutClient
           </p>
         </AnimatedSection>
 
+        {/* Core Operational Values */}
+        <AnimatedSection delay={140} className="mb-20">
+          <h2 className="text-2xl font-semibold text-[var(--color-text-primary)] mb-3">
+            {t.about.howIWorkHeading}
+          </h2>
+          <p className="text-sm text-[var(--color-text-secondary)] mb-8 max-w-xl">
+            {t.about.howIWorkSubheading}
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {t.about.values.map((value, i) => (
+              <AnimatedSection key={value.title} delay={140 + i * 60}>
+                <div className="p-6 rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-bg-surface)] h-full">
+                  <p className="text-xs font-semibold text-[var(--color-accent)] uppercase tracking-wider mb-3">
+                    0{i + 1}
+                  </p>
+                  <h3 className="text-sm font-semibold text-[var(--color-text-primary)] mb-3">
+                    {value.title}
+                  </h3>
+                  <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+                    {value.description}
+                  </p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </AnimatedSection>
+
         {/* Skills */}
-        <AnimatedSection delay={160} className="mb-20">
+        <AnimatedSection delay={200} className="mb-20">
           <h2 className="text-2xl font-semibold text-[var(--color-text-primary)] mb-8">
             {t.about.skillsHeading}
           </h2>
@@ -56,7 +83,7 @@ export default function AboutClient({ skillCategories, siteConfig }: AboutClient
                   {category.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="text-xs text-[var(--color-text-secondary)] bg-[var(--color-bg-surface)] border border-[var(--color-border-subtle)] px-2.5 py-1 rounded-md"
+                      className="text-xs text-[var(--color-text-secondary)] bg-[var(--color-bg-elevated)] border border-[var(--color-border-subtle)] px-2.5 py-1 rounded-md"
                     >
                       {skill}
                     </span>
@@ -68,7 +95,7 @@ export default function AboutClient({ skillCategories, siteConfig }: AboutClient
         </AnimatedSection>
 
         {/* Bottom CTA */}
-        <AnimatedSection delay={240}>
+        <AnimatedSection delay={260}>
           <div className="border-t border-[var(--color-border-subtle)] pt-12">
             <p className="text-[var(--color-text-secondary)] mb-6">
               {t.about.ctaText}

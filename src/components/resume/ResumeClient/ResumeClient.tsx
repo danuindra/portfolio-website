@@ -89,7 +89,7 @@ export default function ResumeClient({ siteConfig }: ResumeClientProps) {
                 Download CV
               </span>
               <p className="text-xs text-[var(--color-text-tertiary)]">
-                PDF coming soon — upload to <code className="font-mono">/public/resume/cv.pdf</code>
+                PDF coming soon, upload to <code className="font-mono">/public/resume/cv.pdf</code>
               </p>
             </div>
           </div>
@@ -201,7 +201,7 @@ export default function ResumeClient({ siteConfig }: ResumeClientProps) {
               title="Personal Portfolio Website"
               subtitle="Web · Self-directed"
               period="Aug 2026"
-              description="Designed and built this portfolio as a real product — from strategy and information architecture to full-stack development with Next.js and Tailwind CSS."
+              description="Designed and built this portfolio as a real product, from strategy and information architecture to full-stack development with Next.js and Tailwind CSS."
             />
             <p className="text-sm text-[var(--color-text-tertiary)] mt-2">
               →{' '}

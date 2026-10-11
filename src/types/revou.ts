@@ -8,6 +8,7 @@ export interface RevoUWeek {
   category: RevoUCategory
   tools: string[]
   thumbnail?: string     // /images/revou/week-01/thumbnail.jpg
+  liveUrl?: string       // link to presentation, live demo, etc.
   isPlaceholder: boolean // true = content not yet filled in
 }
 

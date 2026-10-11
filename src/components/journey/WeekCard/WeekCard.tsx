@@ -28,58 +28,78 @@ export default function WeekCard({ week }: WeekCardProps) {
   const colour = categoryColour[week.category] ?? categoryColour['Placeholder']
 
   return (
-    <Link
-      href={`/projects/week-${weekNum}`}
-      className="group flex flex-col h-full p-5 rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-bg-surface)] hover:border-[var(--color-border-default)] hover:shadow-md transition-all duration-[250ms] hover:-translate-y-1"
-      aria-label={`View Week ${weekNum}: ${week.title}`}
-    >
-      {/* Week number */}
-      <span className="text-xs font-mono font-semibold text-[var(--color-text-tertiary)] mb-3 tracking-widest">
-        WEEK {weekNum}
-      </span>
+    <div className="group flex flex-col h-full rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-bg-surface)] hover:border-[var(--color-border-default)] hover:shadow-md transition-all duration-[250ms] hover:-translate-y-1 overflow-hidden">
+      {/* Main card body — links to internal detail page */}
+      <Link
+        href={`/projects/week-${weekNum}`}
+        className="flex flex-col flex-1 p-5"
+        aria-label={`View Week ${weekNum}: ${week.title}`}
+      >
+        {/* Week number */}
+        <span className="text-xs font-mono font-semibold text-[var(--color-text-tertiary)] mb-3 tracking-widest">
+          PROJECT {weekNum}
+        </span>
 
-      {/* Category badge */}
-      <span className={`inline-block self-start text-xs font-medium px-2 py-0.5 rounded mb-3 ${colour}`}>
-        {week.category}
-      </span>
+        {/* Category badge */}
+        <span className={`inline-block self-start text-xs font-medium px-2 py-0.5 rounded mb-3 ${colour}`}>
+          {week.category}
+        </span>
 
-      {/* Title */}
-      <h3 className="text-sm font-semibold text-[var(--color-text-primary)] mb-2 leading-snug group-hover:text-[var(--color-accent)] transition-colors">
-        {week.isPlaceholder ? (
-          <span className="italic text-[var(--color-text-tertiary)]">Coming soon…</span>
-        ) : (
-          week.title
-        )}
-      </h3>
-
-      {/* Description */}
-      <p className="text-xs text-[var(--color-text-secondary)] leading-relaxed mb-3 flex-1">
-        {week.shortDescription}
-      </p>
-
-      {/* Tools */}
-      {week.tools.length > 0 && (
-        <div className="flex flex-wrap gap-1.5 mt-auto">
-          {week.tools.slice(0, 3).map((tool) => (
-            <span
-              key={tool}
-              className="text-xs font-mono text-[var(--color-text-tertiary)] bg-[var(--color-bg-elevated)] border border-[var(--color-border-subtle)] px-2 py-0.5 rounded"
-            >
-              {tool}
-            </span>
-          ))}
-          {week.tools.length > 3 && (
-            <span className="text-xs text-[var(--color-text-tertiary)] px-1 py-0.5">
-              +{week.tools.length - 3}
-            </span>
+        {/* Title */}
+        <h3 className="text-sm font-semibold text-[var(--color-text-primary)] mb-2 leading-snug group-hover:text-[var(--color-accent)] transition-colors">
+          {week.isPlaceholder ? (
+            <span className="italic text-[var(--color-text-tertiary)]">Coming soon…</span>
+          ) : (
+            week.title
           )}
+        </h3>
+
+        {/* Description */}
+        <p className="text-xs text-[var(--color-text-secondary)] leading-relaxed mb-3 flex-1">
+          {week.shortDescription}
+        </p>
+
+        {/* Tools */}
+        {week.tools.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 mt-auto">
+            {week.tools.slice(0, 3).map((tool) => (
+              <span
+                key={tool}
+                className="text-xs font-mono text-[var(--color-text-tertiary)] bg-[var(--color-bg-elevated)] border border-[var(--color-border-subtle)] px-2 py-0.5 rounded"
+              >
+                {tool}
+              </span>
+            ))}
+            {week.tools.length > 3 && (
+              <span className="text-xs text-[var(--color-text-tertiary)] px-1 py-0.5">
+                +{week.tools.length - 3}
+              </span>
+            )}
+          </div>
+        )}
+
+        {/* View detail link */}
+        <p className="mt-3 text-xs font-medium text-[var(--color-accent)] opacity-0 group-hover:opacity-100 transition-opacity">
+          View Project →
+        </p>
+      </Link>
+
+      {/* Live URL button — only shown when liveUrl exists */}
+      {week.liveUrl && !week.isPlaceholder && (
+        <div className="px-5 pb-4">
+          <a
+            href={week.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="inline-flex items-center gap-1.5 text-xs font-medium text-[var(--color-accent)] border border-[var(--color-accent)] rounded px-3 py-1.5 hover:bg-[var(--color-accent)] hover:text-white transition-colors w-full justify-center"
+            aria-label={`Open live project for Week ${weekNum}`}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Lihat Presentasi
+          </a>
         </div>
       )}
-
-      {/* View link */}
-      <p className="mt-3 text-xs font-medium text-[var(--color-accent)] opacity-0 group-hover:opacity-100 transition-opacity">
-        View Project →
-      </p>
-    </Link>
+    </div>
   )
 }

@@ -4,8 +4,28 @@ import Link from 'next/link'
 import { siteConfig } from '@/data/site'
 import { useLocale } from '@/context/LocaleContext'
 
+// Impact snapshot capabilities — shown below the hero copy
+const capabilities = [
+  {
+    icon: '📈',
+    label: 'Paid Growth',
+    desc: 'Google Ads, Meta Ads, SEM strategy & budget optimization',
+  },
+  {
+    icon: '📊',
+    label: 'Performance Analytics',
+    desc: 'GA4, Looker Studio, conversion tracking & data storytelling',
+  },
+  {
+    icon: '⚙️',
+    label: 'Tracking & Automation',
+    desc: 'GTM setup, event tracking, marketing workflow automation',
+  },
+]
+
 export default function Hero() {
   const { t } = useLocale()
+  const isID = t.locale.current === 'ID'
 
   return (
     <section
@@ -13,7 +33,7 @@ export default function Hero() {
       className="relative min-h-[calc(100svh-4rem)] flex items-center"
     >
       <div className="w-full mx-auto max-w-[1200px] px-4 md:px-8 lg:px-10 py-24">
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
 
           {/* Greeting */}
           <p
@@ -23,7 +43,7 @@ export default function Hero() {
             {t.hero.greeting}
           </p>
 
-          {/* Name — H1, only one per page */}
+          {/* Name */}
           <h1
             className="text-5xl md:text-6xl font-bold tracking-tight text-[var(--color-text-primary)] leading-tight mb-4 animate-fade-up"
             style={{ animationDelay: '80ms' }}
@@ -31,20 +51,20 @@ export default function Hero() {
             {siteConfig.name}
           </h1>
 
-          {/* Role tagline */}
+          {/* Headline — punchy value prop */}
           <p
-            className="text-xl md:text-2xl text-[var(--color-text-secondary)] font-medium mb-6 animate-fade-up"
+            className="text-xl md:text-2xl text-[var(--color-text-secondary)] font-medium mb-5 animate-fade-up"
             style={{ animationDelay: '160ms' }}
           >
-            {siteConfig.title}
+            {t.hero.headline}
           </p>
 
-          {/* Description */}
+          {/* Sub-headline */}
           <p
-            className="text-base md:text-lg text-[var(--color-text-secondary)] leading-relaxed mb-8 max-w-xl animate-fade-up"
+            className="text-base md:text-lg text-[var(--color-text-secondary)] leading-relaxed mb-8 max-w-2xl animate-fade-up"
             style={{ animationDelay: '240ms' }}
           >
-            {t.hero.description}
+            {t.hero.subheadline}
           </p>
 
           {/* CTAs */}
@@ -68,7 +88,7 @@ export default function Hero() {
 
           {/* Availability badge */}
           <div
-            className="flex items-center gap-2 animate-fade-up"
+            className="flex items-center gap-2 mb-16 animate-fade-up"
             style={{ animationDelay: '400ms' }}
           >
             <span
@@ -78,6 +98,34 @@ export default function Hero() {
             <span className="text-sm text-[var(--color-text-secondary)]">
               {t.hero.availability}
             </span>
+          </div>
+
+          {/* Impact Snapshot */}
+          <div
+            className="grid grid-cols-1 sm:grid-cols-3 gap-4 animate-fade-up"
+            style={{ animationDelay: '480ms' }}
+            aria-label="Core capabilities"
+          >
+            {capabilities.map((cap) => (
+              <div
+                key={cap.label}
+                className="p-4 rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-bg-surface)]"
+              >
+                <span className="text-xl mb-2 block" aria-hidden="true">{cap.icon}</span>
+                <p className="text-sm font-semibold text-[var(--color-text-primary)] mb-1">
+                  {cap.label}
+                </p>
+                <p className="text-xs text-[var(--color-text-secondary)] leading-relaxed">
+                  {isID
+                    ? cap.label === 'Paid Growth'
+                      ? 'Google Ads, Meta Ads, strategi SEM & optimasi anggaran'
+                      : cap.label === 'Performance Analytics'
+                      ? 'GA4, Looker Studio, tracking konversi & data storytelling'
+                      : 'Setup GTM, event tracking, otomasi alur kerja marketing'
+                    : cap.desc}
+                </p>
+              </div>
+            ))}
           </div>
 
         </div>
