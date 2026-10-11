@@ -1,8 +1,6 @@
-// Server component — fetches featured projects then hands off to client wrapper
-import { getFeaturedProjects } from '@/lib/mdx'
+// No MDX fetch needed — home preview shows only RevoU week cards
 import ProjectsHighlightClient from './ProjectsHighlightClient'
 
-export default async function ProjectsHighlight() {
-  const projects = await getFeaturedProjects()
-  return <ProjectsHighlightClient projects={projects} />
+export default function ProjectsHighlight() {
+  return <ProjectsHighlightClient />
 }
