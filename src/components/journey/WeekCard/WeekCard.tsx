@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import type { RevoUWeek } from '@/types'
 
 interface WeekCardProps {
@@ -28,13 +27,9 @@ export default function WeekCard({ week }: WeekCardProps) {
   const colour = categoryColour[week.category] ?? categoryColour['Placeholder']
 
   return (
-    <div className="group flex flex-col h-full rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-bg-surface)] hover:border-[var(--color-border-default)] hover:shadow-md transition-all duration-[250ms] hover:-translate-y-1 overflow-hidden">
-      {/* Main card body — links to internal detail page */}
-      <Link
-        href={`/projects/week-${weekNum}`}
-        className="flex flex-col flex-1 p-5"
-        aria-label={`View Week ${weekNum}: ${week.title}`}
-      >
+    <div className="group flex flex-col h-full rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-bg-surface)] overflow-hidden">
+      {/* Main card body — non-clickable for now */}
+      <div className="flex flex-col flex-1 p-5">
         {/* Week number */}
         <span className="text-xs font-mono font-semibold text-[var(--color-text-tertiary)] mb-3 tracking-widest">
           PROJECT {weekNum}
@@ -46,7 +41,7 @@ export default function WeekCard({ week }: WeekCardProps) {
         </span>
 
         {/* Title */}
-        <h3 className="text-sm font-semibold text-[var(--color-text-primary)] mb-2 leading-snug group-hover:text-[var(--color-accent)] transition-colors">
+        <h3 className="text-sm font-semibold text-[var(--color-text-primary)] mb-2 leading-snug">
           {week.isPlaceholder ? (
             <span className="italic text-[var(--color-text-tertiary)]">Coming soon…</span>
           ) : (
@@ -77,12 +72,7 @@ export default function WeekCard({ week }: WeekCardProps) {
             )}
           </div>
         )}
-
-        {/* View detail link */}
-        <p className="mt-3 text-xs font-medium text-[var(--color-accent)] opacity-0 group-hover:opacity-100 transition-opacity">
-          View Project →
-        </p>
-      </Link>
+      </div>
 
       {/* Live URL button — only shown when liveUrl exists */}
       {week.liveUrl && !week.isPlaceholder && (
