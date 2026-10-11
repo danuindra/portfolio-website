@@ -76,21 +76,20 @@ export default function ResumeClient({ siteConfig }: ResumeClientProps) {
               <p className="text-sm text-[var(--color-text-tertiary)] mt-1">{siteConfig.location}</p>
             </div>
 
-            {/* Download button — disabled until CV file is uploaded to /public/resume/cv.pdf */}
+            {/* Download button */}
             <div className="flex flex-col gap-3 sm:items-end shrink-0">
-              <span
-                className="inline-flex items-center justify-center gap-2 h-11 px-6 rounded-lg border border-[var(--color-border-default)] text-[var(--color-text-tertiary)] text-sm font-medium cursor-not-allowed select-none"
-                aria-label="CV not yet available for download"
-                title="CV file coming soon"
+              <a
+                href="/resume/CV Digital Marketing ATS.pdf"
+                download="CV Danu Indra Ismawan - Digital Marketing.pdf"
+                className="inline-flex items-center justify-center gap-2 h-11 px-6 rounded-lg border border-[var(--color-border-default)] text-[var(--color-text-primary)] text-sm font-medium hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+                aria-label="Download CV PDF"
               >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path d="M8 1v9M4.5 7l3.5 3.5L11.5 7M2 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
                 Download CV
-              </span>
-              <p className="text-xs text-[var(--color-text-tertiary)]">
-                PDF coming soon, upload to <code className="font-mono">/public/resume/cv.pdf</code>
-              </p>
+              </a>
+              <p className="text-xs text-[var(--color-text-tertiary)]">PDF, Digital Marketing ATS</p>
             </div>
           </div>
         </AnimatedSection>
@@ -208,17 +207,19 @@ export default function ResumeClient({ siteConfig }: ResumeClientProps) {
         <AnimatedSection delay={200}>
           <div className="mt-4 pt-12 border-t border-[var(--color-border-subtle)] flex flex-wrap items-center justify-between gap-6">
             <p className="text-sm text-[var(--color-text-secondary)]">
-              PDF version coming soon. Upload your CV to <code className="font-mono text-xs">/public/resume/cv.pdf</code> to enable the download button.
+              Ingin versi lengkap dalam format PDF?
             </p>
-            <span
-              className="inline-flex items-center justify-center gap-2 h-10 px-5 rounded-lg border border-[var(--color-border-subtle)] text-[var(--color-text-tertiary)] text-sm font-medium cursor-not-allowed select-none"
-              aria-label="CV not yet available"
+            <a
+              href="/resume/CV Digital Marketing ATS.pdf"
+              download="CV Danu Indra Ismawan - Digital Marketing.pdf"
+              className="inline-flex items-center justify-center gap-2 h-10 px-5 rounded-lg border border-[var(--color-border-default)] text-[var(--color-text-primary)] text-sm font-medium hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+              aria-label="Download CV PDF"
             >
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M8 1v9M4.5 7l3.5 3.5L11.5 7M2 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Download CV
-            </span>
+            </a>
           </div>
         </AnimatedSection>
 
