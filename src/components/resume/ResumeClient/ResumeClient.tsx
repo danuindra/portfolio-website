@@ -134,7 +134,7 @@ export default function ResumeClient({ siteConfig }: ResumeClientProps) {
               title="RevoU Digital Marketing Program"
               subtitle="RevoU"
               period="2026"
-              description="12-week intensive program covering digital marketing fundamentals, SEO, SEM, social media, analytics, and campaign strategy. Completed 12 real-world projects."
+              description="14-week intensive program covering digital marketing fundamentals, SEO, SEM, social media, analytics, and campaign strategy. Completed 12 real-world projects."
             />
             <ResumeItem
               title="S1 Pendidikan Guru Sekolah Dasar (PGSD)"
