@@ -1,0 +1,57 @@
+---
+title: "Google Analytics 4 Dashboard"
+tagline: "Centralized analytics dashboard built with GA4 and Looker Studio to replace manual reporting."
+category: "analytics"
+status: "completed"
+featured: true
+date: "2026-07"
+duration: "2 weeks"
+tools: ["Google Analytics 4", "Looker Studio", "Google Sheets"]
+thumbnail: "/images/projects/ga4-dashboard/thumbnail.jpg"
+metrics:
+  - value: "90%"
+    label: "Reduction in manual reporting time"
+  - value: "1"
+    label: "Unified dashboard replacing 4 separate tools"
+---
+
+## Overview
+
+Built a centralized marketing analytics dashboard using Google Analytics 4 and Looker Studio to consolidate performance data from multiple sources into a single, automatically-updated view. The goal was to create a reporting system that could be understood and used without technical knowledge.
+
+## The Problem
+
+Without a centralized dashboard, tracking campaign performance meant switching between multiple platforms and manually compiling data in spreadsheets. This made it difficult to spot patterns quickly or share insights with others in a readable format.
+
+The manual process took approximately 2 hours every week — time that could be spent on analysis rather than data collection. And because the process was manual, it was also error-prone.
+
+## My Approach
+
+I chose Looker Studio over a custom-built solution because the priority was speed to insight, not technical complexity. The goal was a dashboard that could be updated automatically and read without explanation.
+
+I structured the dashboard around three questions: What is happening? Why is it happening? What should we do about it? This framing kept the design focused on decision-making rather than data display.
+
+## The Process
+
+1. **Audit** — Reviewed existing tracking setup, identified gaps in GA4 configuration
+2. **Connect** — Linked GA4 property to Looker Studio as the primary data source
+3. **Define metrics** — Selected KPIs relevant to the goals: sessions, engagement rate, conversion events, traffic sources
+4. **Design** — Built initial dashboard layout with sections for overview, acquisition, and behavior
+5. **Iterate** — Revised based on what was actually useful vs. what looked good
+6. **Document** — Wrote a short guide explaining how to read and update the dashboard
+
+The biggest challenge was understanding GA4's new session model, which calculates sessions differently from Universal Analytics. This explained why the numbers looked inconsistent at first.
+
+## Results
+
+The dashboard is now the single source of truth for tracking performance. Weekly reporting time dropped from approximately 2 hours to 15 minutes — the dashboard auto-updates and requires no manual data collection.
+
+Having all metrics in one place also made it easier to spot correlations that weren't visible when data was spread across platforms.
+
+## What I Learned
+
+GA4's session definition is fundamentally different from Universal Analytics — a session in GA4 is based on engagement events, not time-based timeouts. Understanding this was key to making the data make sense.
+
+I also learned that dashboard design is really information hierarchy design. The first version had too many metrics competing for attention. The revised version forced a clear priority: most important insight at the top, supporting data below.
+
+If I were to rebuild this, I would define the key questions first and work backwards from those — rather than starting with available data and trying to make it useful after the fact.

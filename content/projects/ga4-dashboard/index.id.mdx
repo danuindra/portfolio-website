@@ -1,0 +1,57 @@
+---
+title: "Dashboard Google Analytics 4"
+tagline: "Dashboard analitik terpusat yang dibangun dengan GA4 dan Looker Studio untuk menggantikan pelaporan manual."
+category: "analytics"
+status: "completed"
+featured: true
+date: "2026-07"
+duration: "2 minggu"
+tools: ["Google Analytics 4", "Looker Studio", "Google Sheets"]
+thumbnail: "/images/projects/ga4-dashboard/thumbnail.jpg"
+metrics:
+  - value: "90%"
+    label: "Pengurangan waktu pelaporan manual"
+  - value: "1"
+    label: "Dashboard terpadu menggantikan 4 alat terpisah"
+---
+
+## Gambaran Umum
+
+Membangun dashboard analitik marketing terpusat menggunakan Google Analytics 4 dan Looker Studio untuk mengkonsolidasikan data performa dari berbagai sumber ke dalam satu tampilan yang diperbarui otomatis. Tujuannya adalah membuat sistem pelaporan yang dapat dipahami dan digunakan tanpa pengetahuan teknis.
+
+## Masalah
+
+Tanpa dashboard terpusat, melacak performa kampanye berarti harus berpindah antara berbagai platform dan mengumpulkan data secara manual di spreadsheet. Ini membuat sulit untuk menemukan pola dengan cepat atau berbagi wawasan dengan orang lain dalam format yang mudah dibaca.
+
+Proses manual ini memakan waktu sekitar 2 jam setiap minggu — waktu yang bisa digunakan untuk analisis, bukan pengumpulan data. Dan karena prosesnya manual, hasilnya juga rentan terhadap kesalahan.
+
+## Pendekatan Saya
+
+Saya memilih Looker Studio daripada solusi yang dibangun sendiri karena prioritasnya adalah kecepatan mendapat insight, bukan kompleksitas teknis. Tujuannya adalah dashboard yang bisa diperbarui otomatis dan dibaca tanpa penjelasan.
+
+Saya menyusun dashboard berdasarkan tiga pertanyaan: Apa yang terjadi? Mengapa terjadi? Apa yang harus kita lakukan? Kerangka ini membuat desain tetap fokus pada pengambilan keputusan, bukan sekadar menampilkan data.
+
+## Proses
+
+1. **Audit** — Meninjau pengaturan pelacakan yang ada, mengidentifikasi celah dalam konfigurasi GA4
+2. **Koneksi** — Menghubungkan properti GA4 ke Looker Studio sebagai sumber data utama
+3. **Definisi metrik** — Memilih KPI yang relevan dengan tujuan: sesi, tingkat engagement, event konversi, sumber traffic
+4. **Desain** — Membangun tata letak dashboard awal dengan bagian untuk overview, akuisisi, dan perilaku
+5. **Iterasi** — Direvisi berdasarkan apa yang benar-benar berguna vs. yang terlihat bagus
+6. **Dokumentasi** — Menulis panduan singkat yang menjelaskan cara membaca dan memperbarui dashboard
+
+Tantangan terbesar adalah memahami model sesi baru GA4, yang menghitung sesi secara berbeda dari Universal Analytics. Ini menjelaskan mengapa angkanya terlihat tidak konsisten pada awalnya.
+
+## Hasil
+
+Dashboard sekarang menjadi sumber kebenaran tunggal untuk melacak performa. Waktu pelaporan mingguan turun dari sekitar 2 jam menjadi 15 menit — dashboard diperbarui otomatis dan tidak memerlukan pengumpulan data manual.
+
+Memiliki semua metrik di satu tempat juga memudahkan untuk menemukan korelasi yang tidak terlihat ketika data tersebar di berbagai platform.
+
+## Yang Saya Pelajari
+
+Definisi sesi GA4 secara fundamental berbeda dari Universal Analytics — sesi di GA4 didasarkan pada event engagement, bukan batas waktu berbasis waktu. Memahami hal ini adalah kunci untuk membuat data masuk akal.
+
+Saya juga belajar bahwa desain dashboard sebenarnya adalah desain hierarki informasi. Versi pertama terlalu banyak metrik yang bersaing untuk mendapat perhatian. Versi yang direvisi memaksa prioritas yang jelas: insight terpenting di atas, data pendukung di bawah.
+
+Jika saya harus membangun ulang ini, saya akan mendefinisikan pertanyaan kunci terlebih dahulu dan bekerja mundur dari sana — daripada memulai dengan data yang tersedia dan mencoba membuatnya berguna setelah fakta.
