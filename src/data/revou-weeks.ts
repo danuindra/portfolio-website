@@ -140,26 +140,6 @@ export const revouWeeks: RevoUWeek[] = [
     liveUrl: 'https://docs.google.com/presentation/d/13FvH5-O9Biq3XqeQqxsYsNwLrchurKbp/edit',
     isPlaceholder: false,
   },
-  {
-    week: 13,
-    slug: 'week-13',
-    title: '',
-    shortDescription: '',
-    category: 'Placeholder',
-    tools: [],
-    thumbnail: undefined,
-    isPlaceholder: true,
-  },
-  {
-    week: 14,
-    slug: 'week-14',
-    title: '',
-    shortDescription: '',
-    category: 'Placeholder',
-    tools: [],
-    thumbnail: undefined,
-    isPlaceholder: true,
-  },
 ]
 
 // Utility: get a single week by slug
